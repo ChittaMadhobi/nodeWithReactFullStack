@@ -53,7 +53,6 @@ passport.use(new GoogleStrategy({
             .then((existingUser) => {     //existingUser is the return value of the query
                 if(existingUser) {
                     // We already have the user
-                    console.log("We are here  ... but why boinking????");
                     done(null, existingUser);   // null mean 'no error' and 2nd parm is the user profile.
                 } else {
                     new User({ googleId:  profile.id}).save()

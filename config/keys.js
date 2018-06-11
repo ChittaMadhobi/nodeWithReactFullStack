@@ -16,5 +16,5 @@ if (process.env.NODE_ENV === 'production'){
     // we are in development and return the dev keys.
     // Here we can opt to select local environment variables to check and setup other
     // environment as QA, Staging etc.
-    module.exports = require ('./dev');  // This would export dev.js to be used by app.js   
+    module.exports = require('./dev');  // This would export dev.js to be used by app.js   
 }
