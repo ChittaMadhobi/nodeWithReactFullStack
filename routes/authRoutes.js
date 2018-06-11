@@ -37,7 +37,7 @@ module.exports = app => {
   );
   //
   app.get ('/auth/google/callback', passport.authenticate ('google'));
-  // To logoug
+  // To logout
   app.get('/api/logout', (req, res) => {
     req.logout();    // passport send few variables in 'req' here. One if logout that disables the cookie.
     res.send(req.user); // This should return null of undefineds in browser.

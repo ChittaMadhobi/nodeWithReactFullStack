@@ -49,9 +49,9 @@ app.use(passport.session());
 //============================================================================
 // ROUTER SECTION 
 // -----------------------------------------------test from browser
-app.get('/', (req, res) => {
-    res.send("Got it ");
-});
+//app.get('/', (req, res) => {
+//    res.send("Got it ");
+//});
 
 // Route authentication function. It routes get:/auth/google then get:/auth/google/callback
 // To get profile related information. 
@@ -64,10 +64,3 @@ const IP   = process.env.IP || localhost;  //Careful to change localhost while p
 app.listen(PORT, IP, function(){
     console.log("Server started at <IP:PORT> as <" + IP + ":" + PORT + "> ");
 });
-
-
-
-
-
-
-
